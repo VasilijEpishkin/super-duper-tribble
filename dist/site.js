@@ -38,6 +38,22 @@ const pages = {
 
 document.getElementById("app").innerHTML = header + (pages[page] || pages.home)() + footer;
 
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+  const targets = document.querySelectorAll(".hero-copy, .hero-image, .intro, .section-heading, .catalog-card, .craft-image, .craft-copy, .page-intro, .product-detail, .split-page, .workshop-hero, .care-hero, .contact-page");
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    }
+  }, { threshold: 0.08, rootMargin: "0px 0px -5% 0px" });
+  targets.forEach((target, index) => {
+    target.classList.add("reveal");
+    target.style.setProperty("--reveal-delay", `${index % 3 * 80}ms`);
+    observer.observe(target);
+  });
+}
+
 function getCart() { try { return JSON.parse(localStorage.getItem("altar-cart") || "{}"); } catch { return {}; } }
 function setCart(cart) { localStorage.setItem("altar-cart", JSON.stringify(cart)); updateCartCount(); }
 function updateCartCount() { const count = Object.values(getCart()).reduce((total, qty) => total + qty, 0); document.querySelectorAll("#cart-count").forEach((node) => node.textContent = String(count)); }

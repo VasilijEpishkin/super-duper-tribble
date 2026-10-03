@@ -148,12 +148,29 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .card-photo { position: relative; display: block; overflow: hidden; background: var(--stone); }
 .card-photo img { aspect-ratio: .82; transition: transform .6s cubic-bezier(.2,.65,.25,1); }
 .card-photo:hover img { transform: scale(1.035); }
+.card-photo:hover .card-arrow, .card-photo:focus-visible .card-arrow { transform: translate(3px, -3px); }
 .card-arrow { position: absolute; right: 12px; bottom: 12px; display: grid; width: 35px; height: 35px; place-items: center; background: var(--paper); color: var(--accent); }
 .card-info { display: flex; justify-content: space-between; gap: 10px; padding-top: 13px; font-size: 13px; line-height: 1.5; }
 .card-name { max-width: 72%; font-weight: 500; }
 .card-name:hover { color: var(--accent); }
 .card-info > span { white-space: nowrap; }
 .card-kind { margin: 5px 0 0; color: var(--muted); font-size: 11px; }
+.card-arrow, .button-link span, .text-link span { transition: transform .35s cubic-bezier(.2,.7,.2,1); }
+.button-link:hover span, .text-link:hover span { transform: translate(3px, -3px); }
+.button-link:active { transform: translateY(1px); }
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); transition-delay: var(--reveal-delay, 0ms); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root) { animation: .2s ease both page-out; }
+  ::view-transition-new(root) { animation: .35s ease both page-in; }
+  @keyframes page-out { to { opacity: 0; } }
+  @keyframes page-in { from { opacity: 0; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .card-arrow, .button-link span, .text-link span { transition: none; }
+}
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 10px; padding: 26px 6.1% 18px; color: var(--muted); font-size: 9px; }
 .breadcrumbs a:hover { color: var(--accent); }
 .product-detail { display: grid; grid-template-columns: 1.1fr .9fr; gap: 8%; padding: 20px 10.4% 110px; align-items: center; }

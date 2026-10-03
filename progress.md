@@ -1,12 +1,14 @@
 # Project Progress
 
 - Project slug: super-duper-tribble
-- Current Stage: 6 Finish gate / private site published; authenticated visual review pending
+- Current Stage: 2 Visual direction rework; current private prototype remains under review
 - Last updated: 2026-10-03
 
 ## Current state
 
-Nine query-routed pages are implemented in `index.html`, `site.js`, and `styles.css`: home, catalog, product, custom order, workshop, care, contacts, cart, and checkout information. The site has internal navigation, source-matched product images on the homepage and in the catalog, category filters, and a local demo cart. The private Sites deployment succeeded and the same implementation commit is pushed to the GitHub `main` branch. The browser reached the Sites sign-in screen; account selection remains with the owner because sign-in shares the account name and email with the Sites app. Authenticated Sites visual and responsive QA remain pending. A local Chrome review of the home and catalog pages is complete. The site is still not a literal transfer of the Stitch screens; those exports contain invented content and need correction.
+Nine query-routed prototype pages exist. Product photos are matched to the real catalog; the current visual direction was rejected by the user and must be redesigned. The official Google Stitch plugins are installed in Codex. Jules CLI is installed, authenticated and connected to this repository; the broken issue-label Action without a GitHub secret was removed. The Miro board has 50 images, and all 12 catalog photos were found among Stitch uploads. `stitch-content-audit.md` records their IDs. A catalog edit returned success but the saved Stitch HTML remained unchanged, so the Stitch screen is not verified or accepted. The prototype now has reduced-motion-aware reveal and page transitions, reviewed locally in Chrome. The private Sites preview still requires authenticated review.
+
+`.stitch/ALTAR_CONTENT.md` is prepared as the verified catalog source for Stitch. The official upload skill requires explicit user confirmation before it is sent to Stitch; that confirmation is pending.
 
 ## Done
 
@@ -21,9 +23,9 @@ Nine query-routed pages are implemented in `index.html`, `site.js`, and `styles.
 
 ## Next
 
-1. Complete owner sign-in and visually review each route at desktop and mobile sizes.
-2. Adjust from the user’s review.
-3. Correct unsupported facts in Stitch, finish all source page designs there, then do a screen-by-screen fidelity pass.
+1. Rework visual direction from the Miro philosophy and original photos; review the design before treating Stitch output as approved.
+2. Correct the saved Stitch screens with the verified product/photo map and create missing source pages. Confirm the HTML and screenshots persisted.
+3. Transfer each approved screen into site code and compare it at desktop and mobile sizes.
 4. Confirm contact details, inventory, checkout, and customer policies before store launch.
 
 ## Evidence / decisions

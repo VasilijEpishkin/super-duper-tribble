@@ -8,7 +8,7 @@ ALTAR’ makes handcrafted jewelry for women who see beauty as connected to self
 
 ## Design source
 
-The currently approved direction is the Stitch screen “ALTAR’ — Главная страница (Editorial Mineral)” and Stitch system “ALTAR Editorial — Mineral”. Use warm mineral light surfaces, charcoal text, restrained oxblood, EB Garamond display type, Geist interface type, sharp forms, spacious editorial layouts, and original product photography. The older dark “Molten Relic Brutalism” system is exploratory and must not override the approved screen. See DESIGN.md and design-tokens.md.
+The “Editorial Mineral” Stitch screens are a proposal under review; the user has rejected the current site's visual quality. Use Miro's brand philosophy and the verified product/photo map in `stitch-content-audit.md` as content sources. Do not assume a generated Stitch caption, product, material, address, or service claim is verified. See DESIGN.md and design-tokens.md for the proposed visual tokens, and compare each saved Stitch export with the built route before claiming fidelity.
 
 ## Agent workflow
 
@@ -22,4 +22,4 @@ The currently approved direction is the Stitch screen “ALTAR’ — Главн
 
 ## Current stage
 
-Local visual prototype of the approved homepage is authorized. Keep commerce, inventory, payment, accounts, and production deployment out of scope until separately confirmed.
+The private preview is a prototype under redesign. Keep commerce, inventory, payment, and accounts out of scope until separately confirmed.
