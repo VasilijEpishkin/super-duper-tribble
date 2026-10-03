@@ -6,7 +6,9 @@
 - Sites saved and privately published the static build successfully. Deployment status: `succeeded`.
 - The hosted URL resolves to its private sign-in screen in an unauthenticated browser.
 - Source UI uses internal query routes for home, catalog, product, custom order, workshop, care, contacts, cart and checkout information.
-- Homepage placements and each catalog item use distinct image URLs.
+- All 12 catalog images were paired with matching product cards from the live ALTAR’ catalog DOM. The homepage now uses distinct, catalog-backed product images.
+- In local Chrome, the home and catalog pages rendered, source product images displayed, and the 390px catalog used a two-column grid with the mobile menu hidden. The private hosted version still needs authenticated review.
+- The prior claim of Stitch fidelity was incorrect: the implementation was written separately. The current version remains a corrected interpretation, not an exact Stitch transfer.
 
 ## Pending authenticated review
 
@@ -16,4 +18,4 @@
 ## Scope limits
 
 - Cart state is browser-local; no order, form, personal data or payment is submitted.
-- Product photo mapping, contacts, stock and policy claims need owner confirmation.
+- Contact channels, stock, and policy claims need owner confirmation. The current Stitch exports contain invented facts and require correction before literal reuse.

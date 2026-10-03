@@ -8,7 +8,7 @@
   --line: #d8d4cd;
   --accent: #8c2e24;
   --serif: "EB Garamond", Georgia, serif;
-  --sans: "DM Sans", Arial, sans-serif;
+  --sans: "Geist", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -145,16 +145,15 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .filter-chip:hover, .filter-chip.is-active { border-color: var(--ink); background: var(--ink); color: var(--paper); }
 .catalog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 50px 22px; }
 .catalog-card { min-width: 0; }
-.card-offset { margin-top: 56px; }
 .card-photo { position: relative; display: block; overflow: hidden; background: var(--stone); }
 .card-photo img { aspect-ratio: .82; transition: transform .6s cubic-bezier(.2,.65,.25,1); }
 .card-photo:hover img { transform: scale(1.035); }
 .card-arrow { position: absolute; right: 12px; bottom: 12px; display: grid; width: 35px; height: 35px; place-items: center; background: var(--paper); color: var(--accent); }
-.card-info { display: flex; justify-content: space-between; gap: 10px; padding-top: 13px; font-size: 10px; line-height: 1.5; }
+.card-info { display: flex; justify-content: space-between; gap: 10px; padding-top: 13px; font-size: 13px; line-height: 1.5; }
 .card-name { max-width: 72%; font-weight: 500; }
 .card-name:hover { color: var(--accent); }
 .card-info > span { white-space: nowrap; }
-.card-kind { margin: 5px 0 0; color: var(--muted); font-size: 9px; }
+.card-kind { margin: 5px 0 0; color: var(--muted); font-size: 11px; }
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 10px; padding: 26px 6.1% 18px; color: var(--muted); font-size: 9px; }
 .breadcrumbs a:hover { color: var(--accent); }
 .product-detail { display: grid; grid-template-columns: 1.1fr .9fr; gap: 8%; padding: 20px 10.4% 110px; align-items: center; }
@@ -251,10 +250,9 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
   .filter-row { overflow: auto; }
   .filter-chip { flex: 0 0 auto; padding: 0 13px; }
   .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 12px; }
-  .card-offset { margin-top: 25px; }
-  .card-info { display: grid; gap: 3px; font-size: 9px; }
+  .card-info { display: grid; gap: 3px; font-size: 12px; }
   .card-name { max-width: 100%; }
-  .card-info > span { font-size: 10px; }
+  .card-info > span { font-size: 12px; }
   .breadcrumbs { padding: 20px 22px 12px; }
   .product-detail { grid-template-columns: 1fr; gap: 32px; padding: 10px 22px 72px; }
   .detail-photo img { aspect-ratio: .92; }
