@@ -6,9 +6,9 @@
 
 ## Current state
 
-Nine query-routed prototype pages exist. Product photos are matched to the real catalog; the current visual direction was rejected by the user and must be redesigned. The official Google Stitch plugins are installed in Codex. Jules CLI is installed, authenticated and connected to this repository; the broken issue-label Action without a GitHub secret was removed. The Miro board has 50 images, and all 12 catalog photos were found among Stitch uploads. `stitch-content-audit.md` records their IDs. A catalog edit returned success but the saved Stitch HTML remained unchanged, so the Stitch screen is not verified or accepted. The prototype now has reduced-motion-aware reveal and page transitions, reviewed locally in Chrome. The private Sites preview still requires authenticated review.
+Nine query-routed prototype pages exist. Product photos are matched to the real catalog; the current visual direction was rejected by the user and must be redesigned. The official Google Stitch plugins are installed in Codex. Jules CLI is installed, authenticated and connected to this repository; the broken issue-label Action without a GitHub secret was removed. The Miro board has 50 images, and all 12 catalog photos were found among Stitch uploads. `stitch-content-audit.md` records their IDs. The verified catalog was uploaded as a Stitch document and confirmed in the project; a prior catalog screen edit returned success but its saved HTML remained unchanged, so that screen is not verified or accepted. The prototype now has reduced-motion-aware reveal and page transitions, reviewed locally in Chrome. The owner-private Sites preview was updated to commit `8937e83ee36cf855b39f3a288bb0f2e082999c21` and deployed successfully.
 
-`.stitch/ALTAR_CONTENT.md` is prepared as the verified catalog source for Stitch. The official upload skill requires explicit user confirmation before it is sent to Stitch; that confirmation is pending.
+`.stitch/ALTAR_CONTENT.md` is the verified catalog source for Stitch. The user approved its upload; Stitch created document screen `3477413372901845918`, which was confirmed by listing screens again. This document does not automatically alter existing generated pages.
 
 ## Done
 
