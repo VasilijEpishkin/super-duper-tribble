@@ -8,7 +8,7 @@ ALTAR’ makes handcrafted jewelry for women who see beauty as connected to self
 
 ## Design source
 
-DESIGN.md is exported from the current Stitch project. Preserve its dark, editorial, tactile direction: black/earth surfaces, restrained crimson, silver details, Courier Prime labels and display text, Geist body text, sharp corners, spacious asymmetrical layouts, and photography of the actual artifacts. Follow its accessibility and responsive constraints where they apply.
+The currently approved direction is the Stitch screen “ALTAR’ — Главная страница (Editorial Mineral)” and Stitch system “ALTAR Editorial — Mineral”. Use warm mineral light surfaces, charcoal text, restrained oxblood, EB Garamond display type, Geist interface type, sharp forms, spacious editorial layouts, and original product photography. The older dark “Molten Relic Brutalism” system is exploratory and must not override the approved screen. See DESIGN.md and design-tokens.md.
 
 ## Agent workflow
 
@@ -22,5 +22,4 @@ DESIGN.md is exported from the current Stitch project. Preserve its dark, editor
 
 ## Current stage
 
-Foundation and discovery. The product website scope and implementation stack have not been approved. Do not infer checkout, inventory, payment, account, or deployment behavior.
-
+Local visual prototype of the approved homepage is authorized. Keep commerce, inventory, payment, accounts, and production deployment out of scope until separately confirmed.

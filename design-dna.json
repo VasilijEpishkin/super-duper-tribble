@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "name": "ALTAR’ — Тихая сила артефакта",
+    "description": "Source-derived design DNA for ALTAR’ jewelry storefront; distinguishes observed Stitch tokens from visual synthesis based on Miro and the live site.",
+    "source_references": [
+      "Miro ALTAR’ brand philosophy: https://miro.com/app/board/uXjVHjFJ6Uc=/",
+      "Miro packaging and visual inspiration: https://miro.com/app/board/uXjVHkiIOhA=/",
+      "Stitch project: https://stitch.withgoogle.com/projects/15828773713461572210",
+      "Live site: https://altarishere.com/",
+      "Existing DESIGN.md in Stitch project: Molten Relic Brutalism"
+    ],
+    "created_at": "2026-10-03"
+  },
+  "design_system": {
+    "color": {
+      "palette_type": "monochromatic with warm earth and restrained red accent",
+      "primary": { "hex": "#131313", "role": "charcoal canvas sampled from existing Stitch system" },
+      "secondary": { "hex": "#2C1900", "role": "warm earth surface from Stitch tokens" },
+      "accent": { "hex": "#9C0000", "role": "restrained crimson marker and primary action from Stitch tokens" },
+      "neutral": { "scale": ["#0E0E0E", "#131313", "#1B1B1B", "#1F1F1F", "#2A2A2A", "#353535", "#E2E2E2", "#FFFFFF"], "usage": "Layered dark canvas, cards, readable warm-light text and highlights; exact stops are from Stitch." },
+      "semantic": { "success": "#A6B6A5 inferred muted green; use only for feedback", "warning": "#E5C096 Stitch secondary gold", "error": "#FFB4AB Stitch error token", "info": "#D8D8D8 Stitch silver" },
+      "surface": { "background": "#131313", "card": "#1B1B1B", "elevated": "#2A2A2A" },
+      "contrast_strategy": "High contrast for product facts and controls; muted tonal variation for imagery-led editorial surfaces. Verify WCAG contrast before implementation."
+    },
+    "typography": {
+      "type_scale": {
+        "display": { "size": "56px desktop / 38px mobile", "weight": "700", "line_height": "64px / 44px", "tracking": "-0.04em desktop / -0.03em mobile" },
+        "heading_1": { "size": "36px", "weight": "700", "line_height": "44px", "tracking": "-0.02em" },
+        "heading_2": { "size": "24px", "weight": "700", "line_height": "32px", "tracking": "-0.01em" },
+        "heading_3": { "size": "18px", "weight": "700", "line_height": "24px", "tracking": "0.02em" },
+        "body": { "size": "16px", "weight": "400", "line_height": "26px", "tracking": "0.01em" },
+        "body_small": { "size": "14px", "weight": "400", "line_height": "22px", "tracking": "0.02em" },
+        "caption": { "size": "12px", "weight": "400", "line_height": "18px", "tracking": "0.02em" },
+        "overline": { "size": "11px", "weight": "400", "line_height": "14px", "tracking": "0.16em" }
+      },
+      "font_families": { "heading": "Courier Prime", "body": "Geist", "mono": "Courier Prime" },
+      "font_style_notes": "Mechanical monospaced titles and labels paired with neutral, readable sans-serif body copy; source fonts and sizes come from Stitch."
+    },
+    "spacing": { "base_unit": "4px", "scale": ["4px", "8px", "16px", "32px", "64px"], "content_density": "spacious editorial with compact factual clusters", "section_rhythm": "Large pauses between story chapters; denser product details and purchase controls." },
+    "layout": { "grid_system": "12-column desktop, 4-column mobile", "max_content_width": "1440px inferred from desktop frame; adjust to screen", "columns": "12 desktop / 4 mobile", "gutter": "24px desktop / 12px mobile (Stitch starting values)", "breakpoints": "mobile-first; exact breakpoints to validate in Stitch", "alignment_tendency": "asymmetric editorial composition anchored by a consistent product grid" },
+    "shape": { "border_radius": { "small": "0px", "medium": "0px", "large": "0px", "pill": "not used" }, "border_usage": "Occasional fine silver/charcoal hairlines; no enclosing border on every block", "divider_style": "1px low-contrast horizontal rules" },
+    "elevation": { "shadow_style": "none or barely perceptible; source photography supplies depth", "levels": { "low": "surface #1B1B1B over #131313", "medium": "surface #2A2A2A over #1B1B1B", "high": "reserved overlay with solid dark scrim" }, "depth_cues": "Tonal fields, crop, material, and light; no glass or red glow." },
+    "iconography": { "style": "Minimal thin-line utility icons; preserve original ALTAR’ eye mark where available", "stroke_weight": "1.5px inferred", "size_scale": "16px, 20px, 24px", "preferred_set": "Existing brand artwork or simple inline SVG; no emoji" },
+    "motion": { "easing": "gentle ease-out; avoid elastic motion", "duration_scale": { "micro": "150ms inferred", "normal": "280ms inferred", "macro": "500ms inferred" }, "entrance_pattern": "Short opacity/position reveal for image and editorial sections, only when it clarifies hierarchy", "exit_pattern": "Faster subtle fade than entrance", "philosophy": "Minimal, tactile, and secondary to the photograph; respect reduced motion." },
+    "components": { "button_style": "Angular rectangular actions; one high-contrast primary action at a time", "input_style": "Visible labels and clear focus state, dark field with legible text", "card_style": "Image-led product tiles with minimal framing; avoid generic boxed cards", "navigation_pattern": "Compact menu with discoverable cart; clear catalog and custom-order routes", "modal_style": "Solid dark scrim and sharp panel only when needed", "list_style": "Clean editorial product grid with consistent image ratios", "component_notes": "Prioritize real artifact photography and plain product facts; do not use fictional badges, stock counts, or material claims." }
+  },
+  "design_style": {
+    "aesthetic": { "mood": ["intimate", "self-possessed", "mysterious", "tactile"], "visual_metaphor": "A small personal object displayed like a contemporary gallery artifact, open to the wearer's meaning", "era_influence": "Contemporary independent jewelry editorial; no single historical period asserted", "genre": "dark editorial storefront", "personality_traits": ["confident", "thoughtful", "sensual", "unforced"], "adjectives": ["sculptural", "human", "quiet", "material", "individual"] },
+    "visual_language": { "complexity": "moderate", "ornamentation": "subtle accents", "whitespace_usage": "spacious around images and brand story; practical density for shopping facts", "visual_weight_distribution": "Asymmetric image-led moments balanced by legible product information", "focal_strategy": "one real piece or detail at a time", "contrast_level": "high for type and action; moderate within dark image-led areas", "texture_usage": "Use real surfaces, metal, stone, skin, paper and fabric from source photos; no decorative fake grain by default" },
+    "composition": { "hierarchy_method": "scale contrast and spatial isolation", "balance_type": "asymmetric", "flow_direction": "editorial vertical narrative into product browsing", "grouping_strategy": "image and its product facts form one clear unit", "negative_space_role": "gives each object room without hiding price or action" },
+    "imagery": { "photo_treatment": "Use original ALTAR’ imagery from Stitch/Miro; retain natural color and honest texture, crop intentionally, avoid generated substitute products", "illustration_style": "none unless existing brand asset", "graphic_elements": "Original ALTAR’ mark, restrained item codes and editorial rules", "pattern_usage": "none by default", "image_shape": "sharp-cornered rectangular and occasional full-bleed crops" },
+    "interaction_feel": { "feedback_style": "clear, immediate, quiet", "hover_behavior": "subtle image crop/scale and underline; no magnetic gimmicks", "transition_personality": "smooth, short, restrained", "loading_style": "stable dark placeholder with image ratio preserved", "microinteraction_density": "low" },
+    "brand_voice_in_ui": { "tone": "Russian, personal, poetic but grounded in real product details", "formality": "direct and intimate", "cta_style": "direct invitation or action", "empty_state_approach": "plain explanation and next action, no invented lore", "error_tone": "calm, specific, and helpful" }
+  },
+  "visual_effects": {
+    "overview": { "effect_intensity": "subtle-accent", "performance_tier": "lightweight", "fallback_strategy": "static photography and CSS only; disable entrance effects for reduced motion or constrained devices", "primary_technology": "CSS only" },
+    "background_effects": { "type": "none", "description": "Use solid tonal surfaces; avoid generated atmospheric backgrounds that compete with product imagery.", "technology": "CSS", "params": { "color_palette": ["#131313", "#1B1B1B", "#2C1900"], "speed": "none", "density": "none", "opacity": "none", "blend_mode": "normal" } },
+    "particle_systems": { "enabled": false, "type": "none", "description": "No particle system is evidenced in the sources.", "technology": "none", "params": { "count": "0", "shape": "none", "size_range": "none", "movement_pattern": "none", "color_behavior": "none", "interaction": "none", "spawn_area": "none" } },
+    "3d_elements": { "enabled": false, "type": "none", "description": "No 3D interface effect is evidenced; use actual product photography.", "technology": "none", "params": { "renderer": "none", "lighting": "photography only", "camera": "none", "materials": "real photographed materials", "geometry": "none", "post_processing": "none", "interaction_model": "none" } },
+    "shader_effects": { "enabled": false, "type": "none", "description": "No shader effects in reference material.", "technology": "none", "params": { "uniforms": "none", "vertex_manipulation": "none", "fragment_output": "none", "noise_type": "none", "distortion": "none" } },
+    "scroll_effects": { "parallax": { "enabled": false, "layers": "0", "depth_range": "none", "speed_curve": "none" }, "scroll_triggered_animations": { "enabled": true, "trigger_points": "when an image/story section enters view", "animation_type": "subtle fade and small translate", "scrub_behavior": "play once; skip under reduced motion" }, "scroll_morphing": { "enabled": false, "description": "No morphing evidenced; keep page geometry stable." } },
+    "text_effects": { "type": "none", "description": "Typography remains readable and static; no typewriter or glitch animation.", "technology": "CSS", "params": { "split_strategy": "none", "animation_per_unit": "none", "stagger": "none", "effect_style": "none" } },
+    "cursor_effects": { "enabled": false, "type": "none", "description": "Use the native cursor for accessibility.", "params": { "shape": "native", "size": "native", "blend_mode": "none", "trail": "none", "interaction_zone": "none" } },
+    "image_effects": { "type": "subtle crop reveal", "description": "Preserve each image's ratio; allow a restrained hover crop/scale only where it signals interactivity.", "technology": "CSS", "params": { "filter_pipeline": "none", "hover_transform": "scale up to 1.02", "reveal_animation": "short opacity reveal", "distortion_type": "none" } },
+    "glassmorphism_neumorphism": { "enabled": false, "style": "none", "params": { "blur_radius": "0px", "transparency": "0", "border_treatment": "none", "shadow_type": "none", "light_source_angle": "none" } },
+    "canvas_drawings": { "enabled": false, "type": "none", "description": "No canvas drawing is evidenced in reference material.", "technology": "none", "params": { "draw_method": "none", "animation_loop": "none", "color_scheme": "none", "responsiveness": "none", "interaction": "none" } },
+    "svg_animations": { "enabled": false, "type": "none", "description": "Keep brand mark static unless an original animation is supplied.", "params": { "animation_method": "none", "path_morphing": "none", "stroke_animation": "none", "filter_effects": "none" } },
+    "composite_notes": "Miro mood references include surreal, intimate photographs, but ALTAR’ explicitly avoids literal witch/goddess/occult representation. Use the owned jewelry and workshop photos in Stitch/Miro as the primary imagery; do not infer product identity from moodboard images. The packaging board's unboxing 'discovery' idea is a material/experience reference, not a requirement to place packaging props on every page."
+  }
+}

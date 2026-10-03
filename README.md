@@ -1,13 +1,13 @@
 # ALTAR’ — super-duper-tribble
 
-This repository is the implementation workspace for ALTAR’, a handcrafted jewelry brand. Product and brand research lives in Miro; the current visual system is in Stitch. The site itself has not been approved for implementation yet.
+This repository is the implementation workspace for ALTAR’, a handcrafted jewelry brand. Product and brand research lives in Miro; the approved visual direction is “Editorial Mineral” in Stitch. The new Russian-language site includes its own internal routes for the home page, catalog, product detail, custom order, workshop, care, contacts, cart, and checkout information. It is a static prototype with a browser-local demo cart; payment and form submission are not connected.
 
 ## Project sources
 
 - [Miro — ALTAR’ brand philosophy and packaging](https://miro.com/app/board/uXjVHjFJ6Uc=/)
 - [Stitch — Altar Redesign System](https://stitch.withgoogle.com/projects/15828773713461572210)
-- [Design system export](DESIGN.md)
-- Project discovery artifacts: workspace/projects/super-duper-tribble/
+- [Approved design system](DESIGN.md)
+- [Project discovery artifacts](.)
 
 ## Jules workflow
 
@@ -18,7 +18,6 @@ This repository is the implementation workspace for ALTAR’, a handcrafted jewe
 
 Codex can also delegate directly using the Jules CLI and the jules-orchestration skill when the CLI is installed and signed in locally.
 
-## Status
+## Preview and limits
 
-This commit adds project context and the agent workflow only. Product scope, pages, commerce behavior, content, and deployment target remain open; no storefront code has been generated.
-
+Open `index.html` in a static web host. Routes use `?page=` (for example, `?page=catalog` or `?page=workshop`). Cart contents live in browser local storage. The catalog names and prices come from the reviewed source catalog; checkout, inventory, verified product-specific photo mapping, contact details, and order submission need confirmation before a real store launch.
