@@ -3,8 +3,8 @@
 | Page / flow | User need | Core content and action |
 |---|---|---|
 | Home (`?page=home`) | Feel the brand and find a piece | Editorial hero, distinct image-led collection entry points, craft introduction and internal catalog paths |
-| Catalog (`?page=catalog`) | Browse jewelry | Twelve source-listed pieces, source-listed prices and category filters |
-| Product (`?page=product&id=…`) | Consider one piece | Distinct product image, source-listed name and price, available story for VESNA, internal cart action |
+| Catalog (`?page=catalog`) | Browse jewelry | Sixteen source-listed pieces plus a gift certificate, source-listed prices and category filters |
+| Product (`?page=product&id=…`) | Consider one piece | Distinct product image, source-listed name and price; all 17 source product pages have individual descriptions and galleries to transfer |
 | Cart (`?page=cart`) | Review a selection | Local browser cart with quantity controls and empty state |
 | Checkout (`?page=checkout`) | Understand next step | Honest placeholder explaining that online order and payment are not connected |
 | Individual order (`?page=custom`) | Propose a custom object | Short process and internal route to contacts |
@@ -14,6 +14,8 @@
 
 ## Main journey
 Home → catalog → product detail → local cart → checkout information. Custom commission has a separate path to contacts.
+
+See [source-site-inventory.md](source-site-inventory.md) for the source URL and implementation status of every source section and product.
 
 ## Out of scope until confirmed
 Payment backend, live inventory, customer accounts, shipping calculator, loyalty system, personal data collection, or unverified product/policy copy.

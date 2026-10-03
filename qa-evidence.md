@@ -6,7 +6,7 @@
 - Sites saved and privately published the static build successfully. Deployment status: `succeeded`.
 - The hosted URL resolves to its private sign-in screen in an unauthenticated browser.
 - Source UI uses internal query routes for home, catalog, product, custom order, workshop, care, contacts, cart and checkout information.
-- All 12 catalog images were paired with matching product cards from the live ALTAR’ catalog DOM. The homepage now uses distinct, catalog-backed product images.
+- Both source catalog pages were inspected in the browser: 12 jewelry pieces on page 1 and 4 jewelry pieces plus a gift certificate on page 2. All 17 first images match uploaded Stitch assets. Each source product detail page was opened and has its own description and gallery. The local prototype displays 17 catalog cards, and its Ruby product gallery was switched in the browser; the selected state and second source photo changed. Full galleries are still pending.
 - In local Chrome, the home and catalog pages rendered, source product images displayed, and the 390px catalog used a two-column grid with the mobile menu hidden. The private hosted version still needs authenticated review.
 - Local Chrome confirmed 9 scroll-reveal targets on the home page, with 8 entering the visible state after scrolling. CSS page transitions are supported in that browser; reduced-motion styles disable the added effects. This checks behavior only, not design quality.
 - The prior claim of Stitch fidelity was incorrect: the implementation was written separately. The current version remains a corrected interpretation, not an exact Stitch transfer.
