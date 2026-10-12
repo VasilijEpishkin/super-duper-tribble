@@ -9,7 +9,8 @@ Source of truth = Google Drive folder `ALTAR’`. The repo is **public and holds
 | `materials/references/` | loose images in Drive root | moodboard / inspiration (typography, posters, identities) — NOT product |
 | `materials/product/` | Предметка и пнг, ПНГ первая коллекция, Altar' каталог новые | cut-out product PNGs, catalog shots |
 | `materials/photo/` | Сьемка, Первая сьемка, Пленка | photoshoots, film: editorial/hero imagery |
-| `materials/content/` | Контент | texts, copy, catalogue data |
+| `materials/video/` | Контент | ~22 .MOV clips (not in git) |
+| `materials/content/` | instories cards, text docs | copy, prices, catalogue data |
 | `materials/_inbox/` | — | unsorted; nothing is used from here |
 
 ## Routing: material → site part → tool/agent
@@ -20,7 +21,7 @@ Source of truth = Google Drive folder `ALTAR’`. The repo is **public and holds
 | product | catalog, product cards, product pages | 5–8 representative pieces, not all | component-researcher → frontend-developer | resize/webp/srcset batch, catalog data → JSON |
 | photo | hero, editorial, about/workshop | 3–6 best frames | art-director picks → motion-3d-engineer (parallax/reveal) | image optimization batch |
 | video (.MOV) | hero loop, workshop/story section | no (Stitch is static) | motion-3d-engineer: compress/trim with ffmpeg → `public/assets/video/*.mp4/webm` | never (large binaries) |
-| content | all copy, catalog data, SEO | no | ux-architect (brief/page-map), research-librarian (facts) | SEO metadata, JSON-LD |
+| content (instories PNG, texts) | all copy, catalog data, SEO | no | ux-architect (brief/page-map), research-librarian (facts) | SEO metadata, JSON-LD |
 
 Rules: every file gets one row in `materials/manifest.yaml`; `use:` names the page/section; `stitch:` true only for files uploaded to the board; agents receive **manifest rows/paths**, never pasted images.
 
