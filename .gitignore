@@ -2,6 +2,6 @@ node_modules/
 .env*
 *.local
 .DS_Store
-# originals live in Google Drive; only the manifest is tracked
+# originals and detailed manifest stay local
 materials/*
-!materials/manifest.yaml
+.serena/
