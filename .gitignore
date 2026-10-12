@@ -1,0 +1,7 @@
+node_modules/
+.env*
+*.local
+.DS_Store
+# originals live in Google Drive; only the manifest is tracked
+materials/*
+!materials/manifest.yaml
